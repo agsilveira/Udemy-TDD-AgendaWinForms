@@ -147,3 +147,4 @@ D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao.Test\obj\Debug\net8.0\ref\Agenda.D
 D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao.Test\bin\Debug\net8.0\DBAgenda_Create.sql
 D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao.Test\bin\Debug\net8.0\AutoFixture.dll
 D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao.Test\bin\Debug\net8.0\Fare.dll
+D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao.Test\obj\Debug\net8.0\Agenda.Dao.Test.sourcelink.json

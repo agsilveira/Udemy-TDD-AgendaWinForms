@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Agenda.Dao.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+181c0af2ad6562dfa9cc210a723894f6a39ebec7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Agenda.Dao.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Agenda.Dao.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

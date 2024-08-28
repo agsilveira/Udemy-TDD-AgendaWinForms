@@ -10,5 +10,6 @@ namespace Agenda.Domain.Interface
     {
          Guid Id { get; set; }
          string Nome { get; set; }
+        IList<ITelefone> Telefones { get; set; }
     }
 }

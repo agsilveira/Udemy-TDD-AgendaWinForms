@@ -13,3 +13,4 @@ D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao\obj\Debug\net8.0\Agenda.Dao.dll
 D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao\obj\Debug\net8.0\refint\Agenda.Dao.dll
 D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao\obj\Debug\net8.0\Agenda.Dao.pdb
 D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao\obj\Debug\net8.0\ref\Agenda.Dao.dll
+D:\udemy\tdd\AgendaWinForms\Agenda\Agenda.Dao\obj\Debug\net8.0\Agenda.Dao.sourcelink.json

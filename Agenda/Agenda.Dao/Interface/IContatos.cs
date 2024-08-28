@@ -6,7 +6,7 @@ namespace Agenda.Dao.Interface
     public interface IContatos
     {
         void Adicionar(IContato contato);
-        IContato Obter(string id);
+        IContato Obter(Guid id);
         IList<IContato> ObterTodos();
     }
 }

@@ -7,3 +7,6 @@
 ./bin
 
 /Agenda/Agenda.Dao/bin/Debug/net8.0
+/Agenda/Agenda.Dao.Test/bin/Debug/net8.0
+/Agenda/Agenda.Repository.Test/bin/Debug/net8.0
+/Agenda/Agenda.Repository.Test/obj/Debug/net8.0

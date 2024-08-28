@@ -75,3 +75,5 @@ out/
 #/Agenda/Agenda.Dao.Test/bin/Debug/net8.0
 #/Agenda/Agenda.Repository.Test/bin/Debug/net8.0
 #/Agenda/Agenda.Repository.Test/obj/Debug/net8.0
+/Agenda/Agenda.Dao/Contatos.cs
+/Agenda/Agenda.Dao/Agenda.Dao.csproj

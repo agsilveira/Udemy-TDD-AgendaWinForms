@@ -13,17 +13,19 @@ namespace Agenda.Dao.Test
 
         public BaseTest()
         {
-            //Use o nome que você criou quando gerou o script.
+            
             _script = @"DBAgenda_Create.sql";
 
-            //Use o nome que você criou quando ao definir o nome da conexão do arquivo App.config.
-            //No meu caso, usei connectionSetupTest
-            //var conSettings = ConfigurationManager.ConnectionStrings["connectionSetupTest"];
-            //_strCon = conSettings.ConnectionString;
-            //_catalogTest = conSettings.ProviderName;
-            _strCon = @"Data Source=localhost\SQLEXPRESS; Initial Catalog=Agenda;Integrated Security=True; TrustServerCertificate=True;";
-            _catalogTest = "AgendaTeste";
-}
+            // Cria uma instância da classe AppSettings
+            var appSettings = new AppSettingsTests();
+
+            // Usa a classe AppSettings para obter a string de conexão e providerName
+            _strCon = appSettings.GetConnectionString("connectionSetupTest");
+            _catalogTest = appSettings.GetProviderName("connectionSetupTest");
+
+            
+
+        }
 
         [OneTimeSetUp]
         public void OneTimeSetup()

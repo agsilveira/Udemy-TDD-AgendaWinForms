@@ -2,11 +2,76 @@
 # Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
 ################################################################################
 
-.vs
-./obj
-./bin
+# Arquivos de build
+bin/
+obj/
+out/
 
-/Agenda/Agenda.Dao/bin/Debug/net8.0
-/Agenda/Agenda.Dao.Test/bin/Debug/net8.0
-/Agenda/Agenda.Repository.Test/bin/Debug/net8.0
-/Agenda/Agenda.Repository.Test/obj/Debug/net8.0
+# Diretórios de pacotes NuGet
+packages/
+*.nupkg
+
+# Arquivos de configuração do usuário do Visual Studio
+.vs/
+.vscode/
+
+# Configurações específicas do usuário
+*.user
+*.userosscache
+*.suo
+*.suo
+*.tss
+
+# Arquivos de configuração do usuário do Rider
+.idea/
+
+# Arquivos temporários e logs
+*.log
+*.tmp
+*.temp
+
+# Configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs e arquivos de cache do npm
+npm-debug.log
+yarn-error.log
+
+# Arquivos de backup
+*.bak
+
+# Outros arquivos e pastas que não devem ser versionados
+*.pid
+*.seed
+*.gz
+*.tar
+*.zip
+*.7z
+*.rar
+*.iso
+
+
+# Diretórios e arquivos gerados por extensões e depuração
+.history/
+*.code-workspace
+
+
+# Arquivos e diretórios de build
+node_modules/
+dist/
+build/
+out/
+
+# Arquivos de cache do editor
+*.swp
+*.swo
+
+
+
+
+
+#/Agenda/Agenda.Dao/bin/Debug/net8.0
+#/Agenda/Agenda.Dao.Test/bin/Debug/net8.0
+#/Agenda/Agenda.Repository.Test/bin/Debug/net8.0
+#/Agenda/Agenda.Repository.Test/obj/Debug/net8.0

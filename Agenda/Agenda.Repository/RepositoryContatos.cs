@@ -13,10 +13,10 @@ namespace Agenda.Repository
             _telefones = telefones;
         }
 
-        public IContato ObiterPorId(Guid id)
+        public IContato ObterPorId(Guid id)
         {
             IContato contato = _contatos.Obter(id);
-            IList<ITelefone> lstTelefones = _telefones.ObiTerTodosDoContato(id);
+            IList<ITelefone> lstTelefones = _telefones.ObTerTodosDoContato(id);
             contato.Telefones = lstTelefones;
             return contato;
         }

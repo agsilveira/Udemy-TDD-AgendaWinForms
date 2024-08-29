@@ -4,6 +4,6 @@ namespace Agenda.Dao.Interface
 {
     public interface ITelefones
     {
-        IList<ITelefone> ObiTerTodosDoContato(Guid contatoId);
+        IList<ITelefone> ObTerTodosDoContato(Guid contatoId);
     }
 }

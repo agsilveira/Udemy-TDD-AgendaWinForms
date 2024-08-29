@@ -1,5 +1,4 @@
-﻿using Agenda.Domain;
-using Agenda.Domain.Interface;
+﻿using Agenda.Domain.Interface;
 
 namespace Agenda.Dao.Interface
 {

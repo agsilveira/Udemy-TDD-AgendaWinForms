@@ -10,5 +10,6 @@ namespace Agenda.Domain.Interface
     {
          Guid Id { get; set; }
          string Numero { get; set; }
+        Guid ContatoId { get; set; }
     }
 }

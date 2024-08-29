@@ -1,6 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
 using NUnit.Framework;
-using System.Configuration;
 
 namespace Agenda.Dao.Test
 {

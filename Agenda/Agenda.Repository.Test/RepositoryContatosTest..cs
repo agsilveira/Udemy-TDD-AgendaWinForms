@@ -2,7 +2,6 @@
 using Agenda.Domain.Interface;
 using Moq;
 using NUnit.Framework;
-using System.Linq.Expressions;
 
 namespace Agenda.Repository.Test
 {

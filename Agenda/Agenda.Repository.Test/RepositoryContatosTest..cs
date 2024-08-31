@@ -22,26 +22,26 @@ namespace Agenda.Repository.Test
         [Test]
         public void DeveSerPossivelObterContatoPorIdComTelefonesV3()
         {
-            Guid contatoId = Guid.NewGuid();
-            Guid telefoneID = Guid.NewGuid();
+            var contatoId = Guid.NewGuid();
+            var telefoneID = Guid.NewGuid();
             //versão bem detalhada para o entendimento do mock
-            IList<ITelefone> lsTelefone = new List<ITelefone>();
+            var lsTelefone = new List<ITelefone>();
             //monta
             //Criar MoCk de IContato
-            Mock<IContato> mContato = IContatoConstrutor.GetIContato()                
+            var mContato = IContatoConstrutor.GetIContato()                
                 .ComId(contatoId)
                 .ComNome("João")
                 .Obter();
             //    new Mock<IContato>();
             //moca um método set para recebimento de valor esterno
             mContato.SetupSet(o => o.Telefones = It.IsAny<IList<ITelefone>>())
-                .Callback<IList<ITelefone>>(p => lsTelefone = p);// quando SetupSet for chamado ele vai colocar o valor recebido na variavel
+                .Callback<IList<ITelefone>>(p => lsTelefone = (List<ITelefone>)p);// quando SetupSet for chamado ele vai colocar o valor recebido na variavel
 
             //Criar Mock do metodo obter
             _contatos.Setup(o => o.Obter(It.IsAny<Guid>())).Returns(mContato.Object);
 
             // criar mock de Itelefone
-            ITelefone mockTelefone = ITelefoneConstrutor.GetTelefone()
+            var mockTelefone = ITelefoneConstrutor.GetTelefone()
                                             .TelefonePadrao()
                                             .ComId(telefoneID)                                            
                                             .ComContatoId(contatoId)
@@ -53,7 +53,7 @@ namespace Agenda.Repository.Test
 
             //execução
             //chamar o método ObiterPorId do repositorio
-            IContato contatoRetornado = _repository.ObterPorId(contatoId);
+            var contatoRetornado = _repository.ObterPorId(contatoId);
 
             //quando chamar ObterPorId esse irar chamar o set de telefones, agora nós configuramos o get para mostra retornar esse valor
             mContato.SetupGet(o => o.Telefones).Returns(lsTelefone);
